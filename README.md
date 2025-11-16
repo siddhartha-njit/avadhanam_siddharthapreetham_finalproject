@@ -10,39 +10,36 @@ All models share the same preprocessing pipeline, run under 10-fold stratified c
 
 ## Repository Layout
 
-'''
+```
 data/                         # healthcare-dataset-stroke-data.csv (Kaggle download)
 notebooks/final_project.ipynb # submission-ready Jupyter notebook
 reports/                      # metrics CSV + generated figures (Figures in a seperate sub-folder "figures")
 src/final_project.py          # main 10-fold training/evaluation script
 requirements.txt              # Python dependencies
-
-'''
+```
 
 ## Setup
 
 Compatible Python versions: **3.10 – 3.12** (developed/tested on Python 3.12.0, the latest release supported by dependencies such as TensorFlow 2, scikit-learn 1.4, and seaborn 0.13).
 
-'''powershell (Powershell Terminal inside VSCode)
+```powershell (Powershell Terminal inside VSCode)
 # In VS Code: View > Command Palette > "Python: Create Environment" (select Venv + current interpreter)
 python -m venv .venv
 .venv\Scripts\activate
 pip install --upgrade pip
 pip install -r requirements.txt
-
-'''
+```
 
 Download 'healthcare-dataset-stroke-data.csv' from Kaggle and place it in 'data/healthcare-dataset-stroke-data.csv'.
 
 ## Running the Pipeline
 
-'''powershell
+```powershell
 # Run from the project root inside the activated VS Code terminal
 python src/final_project.py
+```
 
-'''
-
-This command:
+This script:
 
 1. Generates all figures (correlation heatmap, pairplot, confusion matrices, ROC curves, model comparison bar chart, feature importances) under 'reports/figures/'.
 2. Writes 'reports/metrics_all_models.csv', which contains every fold plus the averaged metrics for the three models.
