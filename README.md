@@ -55,3 +55,9 @@ Open 'notebooks/final_project.ipynb' after running the script (or after installi
 
 - Seeds ('numpy' and TensorFlow) are fixed in 'src/final_project.py' to keep results stable across runs.
 - All project files use relative paths computed from the repository root (Parent folder).
+
+
+## Class Imbalance Handling
+
+- The Kaggle stroke dataset is highly skewed (~95/5). Each training fold now applies **SMOTE** with `sampling_strategy=0.4286` to achieve an approximate 70/30 split for the minority/majority classes while keeping the validation fold untouched so reported metrics reflect the natural distribution.
+- Random Forest, SVM, and Conv1D continue to receive class weights in addition to SMOTE, giving the minority class extra emphasis that aligns with the Module 8/Template guidance about handling class imbalance when applicable.
