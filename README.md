@@ -53,4 +53,4 @@ Open 'notebooks/final_project.ipynb' after running the script (or after installi
 ## Notes on Replicating
 
 - Seeds ('numpy' and TensorFlow) are fixed in 'src/final_project.py' to keep results stable across runs.
-- All project files use relative paths computed from the repository root, so graders can run the code without editing anything.
+- All project files use relative paths computed from the repository root (Parent folder).
