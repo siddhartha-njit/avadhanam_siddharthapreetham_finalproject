@@ -11,11 +11,12 @@ All models share the same preprocessing pipeline, run under 10-fold stratified c
 ## Repository Layout
 
 ```
-data/                         # healthcare-dataset-stroke-data.csv (Kaggle download)
-notebooks/final_project.ipynb # submission-ready Jupyter notebook
-reports/                      # metrics CSV + generated figures (Figures in a seperate sub-folder "figures")
-src/final_project.py          # main 10-fold training/evaluation script
-requirements.txt              # Python dependencies
+data/                                 # healthcare-dataset-stroke-data.csv (Kaggle download)
+notebooks/final_project.ipynb         # submission-ready Jupyter notebook
+reports/                              # metrics CSV + generated figures (Figures in a seperate sub-folder "figures")
+src/final_project.py                  # main 10-fold training/evaluation script
+requirements.txt                      # Python dependencies
+finalproject_jupyterexport_report.pdf # Jupyter notebook export report
 ```
 
 ## Setup
